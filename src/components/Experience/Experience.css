@@ -1,0 +1,25 @@
+.frontend-container{
+    margin-left:40px;
+}
+.frontend-sub-container{
+    margin-top: 20px;
+    margin-left:60px;
+
+}
+
+.html{
+    width:60%;
+    height: 20px;
+    background-color:  #cc4b2c;
+}
+.JS{
+    width:70%;
+    height: 20px;
+    background-color:  #cc4b2c; 
+}
+
+.php{
+    width:10%;
+    height: 20px;
+    background-color:  #cc4b2c; 
+}
