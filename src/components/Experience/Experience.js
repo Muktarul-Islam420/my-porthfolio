@@ -15,7 +15,7 @@ const Experience = () => {
             <div className="row">
                 <div className="col-md-6">
                     <div className="frontend-container">
-                        <h3 className="subtitle-text">Frontend Experience</h3>
+                        <h4 className="subtitle-text">Frontend Experience</h4>
 
                         <div className="frontend-sub-container">
                         <div className="html-box">
@@ -64,7 +64,7 @@ const Experience = () => {
                 <div className="col-md-6">
                 
                     <div className="frontend-container">
-                        <h3 className="subtitle-text">Backend Experience</h3>
+                        <h4 className="subtitle-text">Backend Experience</h4>
 
                         <div className="frontend-sub-container">
                             

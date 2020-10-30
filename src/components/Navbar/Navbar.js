@@ -1,34 +1,33 @@
 import React from 'react';
-
+import './Navbar.css'
 const Navbar = () => {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">CV</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact me</a>
-      </li>
-    
-    </ul>
-  </div>
-</nav>
+            <nav class="navbar navbar-expand-lg navbar-light ">
+               <div src="/">
+               <img src="https://img.techpowerup.org/201029/profilphoto377.png" className="nav-icon" alt=""/>
+               </div>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/"><span style={{color:'#11262e'}}>Home</span> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/project"><span style={{color:'#11262e'}}>Project</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog"><span style={{color:'#11262e'}}>Blog</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cv"><span style={{color:'#11262e'}}>CV</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact"><span style={{color:'#11262e'}}>AboutMe</span> </a>
+                        </li>
+                        
+                        </ul>
+                    </div>
+            </nav>
         </div>
     );
 };

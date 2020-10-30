@@ -1,0 +1,53 @@
+
+
+.cv-container{
+    width: 90%;
+    height: auto;
+    margin-top:100px;
+    margin-bottom:100px;
+    background-color:  whitesmoke;
+    cursor: pointer;
+}
+.cv-container:hover{
+    transform:rotateX(-1);
+    transition:.3s;
+}
+.col-md-4{
+    background-color:#11262e;
+    color:white;
+}
+.cv-img{
+    width:140px;
+    border-radius:50%;
+    border:1px solid whitesmoke;
+    margin-top:40px;
+    margin-left: 25%;
+    margin-bottom:40px;
+}
+.cv-name{
+    color:#11262e;
+    
+    
+    margin-top:60px;
+    margin-left: 30px;
+    font-weight:800;
+   font-size: 70px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+.cv-title{
+    color:#11262e;
+    margin-left:45px;
+    font-size: 18px;
+}
+.cv-info{
+    text-align: center;
+    border-bottom:1px solid white;
+}
+.cv-skill{
+    border-bottom:1px solid #11262e;
+}
+.cv-project{
+    color:#093749;
+}

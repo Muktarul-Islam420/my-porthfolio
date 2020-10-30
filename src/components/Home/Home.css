@@ -1,3 +1,7 @@
+.header-container{
+    
+}
+
 .header-sub-container{
     margin-top:50px;
     margin-left: 40%;
@@ -10,9 +14,21 @@
     border-radius:50%;
     overflow: hidden;
 }
+.profileImage-box:hover{
+    background-color: #12d0d8;
+}
 
 .name{
     color:  #cc4b2c;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 0 2px 2px rgb(71, 255, 230);
+}
+.name:hover{
+    color: #12d0d8;
+    font-style: bold;
+    text-shadow: 0 1px 1px rgb(255, 39, 39);
 }
 .profile-image{
     width:220px;
@@ -38,11 +54,23 @@
     margin-top:60px;
     font-size: 20px;
     background-color:  #cc4b2c;
-   color: #EAE7E6;
     border-radius:20px;
     cursor: pointer;
+    transition:.3s;
+}
+.resume-btn-text{
+    margin-left:44%;
+    margin-top:-50px;
+    color: #EAE7E6;
+    cursor: pointer;
+    font-size: 20px;
+}
+.resume-btn-text:hover{
+    color: #FFFAFA;
+    text-decoration: none;
+  
 }
 .resume-btn:hover{
     background-color:  #662616;
-    color: #FFFAFA;
+   
 }

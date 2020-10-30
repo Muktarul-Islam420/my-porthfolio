@@ -1,0 +1,17 @@
+.nav-icon{
+    width:50px;
+    border-radius: 50%;
+    margin-left:40px;
+    margin-right:400px;
+    cursor: pointer;
+}
+.nav-link{
+    margin-right:60px;
+    color:#d44211;
+    font-weight:400;
+    
+}
+.nav-item:hover{
+    border-bottom: 2px solid #00ffd5 ;
+
+}

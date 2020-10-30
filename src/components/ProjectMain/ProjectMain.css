@@ -1,0 +1,76 @@
+.my-project{
+    color:  #cc4b2c;
+    font-size: 28px;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+.project-container{
+    height: 900px;
+    width: 90%;
+    margin-left: 40px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    box-shadow: 10px 15px 10px gray;
+  border-left: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+.project-container:hover{
+    transform:scale(1.1);
+    transition:.3s;
+}
+
+.project-img{
+    width:500px;
+    height: 400px;
+    margin-top:20px;
+    margin-left:12%;
+    margin-bottom:30px;
+    border-radius:10px;
+}
+
+.project-name{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color:#290F09;
+    font-style: italic;
+}
+.project-name-sub{
+    font-style: italic;
+    font-weight:600;
+    color:#18d2b2;
+}
+.project-details{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color:#54423D;
+   font-style: italic;
+}
+.project-list-container{
+    margin-left: 10%;
+}
+li{
+    font-size:16px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    color: #662616;
+}
+li:hover{
+    color: cyan;
+}
+
+.link-container{
+    margin-left:25%;
+}
+
+.code-link{
+    margin-right: 45%;
+}

@@ -1,7 +1,8 @@
 import React from 'react';
-import './Header.css'
+import './Home.css'
 import { SiFacebook, SiGithub, SiLinkedin, SiDribbble } from "react-icons/si";
-const Header = () => {
+import { Link } from 'react-router-dom';
+const Home = () => {
     return (
         <div className="header-container">
             <div className="header-sub-container">
@@ -20,13 +21,15 @@ const Header = () => {
                     
                 </div>
            </div>
-           <div className="resume-btn">
-                <div className="resume-btn-text align-self-center"> 
-                   <p style={{ marginLeft:'40%', marginTop:'10px'}}><strong>Download Resume</strong></p>
-                   </div>
-                   </div>
+         
+            <Link style={{textDecoration:'none'}} to="https://drive.google.com/file/d/1asnINlskHLtxDlH7s5u-eqgcqsrsP284/view?usp=sharing" >
+           <div className="resume-btn"></div>
+           <p className="resume-btn-text"><strong>Download Resume</strong></p>
+           </Link>
+           
+          
         </div>
     );
 };
 
-export default Header;
+export default Home;
