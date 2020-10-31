@@ -78,7 +78,38 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div> 
+
+            <div className="form-container">
+                <div class="content">
+							<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
+							<form action="POST" data-netlify="true">
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+									</div>
+									<div class="field">
+										<input type="file" name="myfile" id="myfile" placeholder="Upload file" rows="7"/>
+									</div>
+									<div class="field">
+										<div
+											data-netlify-recapta="true">
+										</div>
+									</div>
+									
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="button primary" /></li>
+								</ul>
+							</form>
+				</div>
+                </div>           
         </div>
     );
 };

@@ -11,7 +11,6 @@ import {
 
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Experience from './components/Experience/Experience';
 import Project from './components/Project/Project';
 import Blog from './components/Blog/Blog';
 import CV from './components/CV/CV';
@@ -19,11 +18,14 @@ import Navbar from './components/Navbar/Navbar';
 
 
 function App() {
+
+
   return (
  
     <>
+   
     <Navbar></Navbar>
-
+ 
       <Router>
         <Switch>
           <Route path="/home">
@@ -46,6 +48,7 @@ function App() {
           </Route>
         </Switch>
     </Router>
+   
     </>
   );
 }

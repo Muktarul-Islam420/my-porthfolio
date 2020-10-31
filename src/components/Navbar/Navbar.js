@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css'
 const Navbar = () => {
     return (
@@ -10,6 +11,7 @@ const Navbar = () => {
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                         <li class="nav-item active">
+                            {/* <Link class="nav-link" href="/"><span style={{color:'#11262e'}}>Home</span> <span class="sr-only">(current)</span> </Link> */}
                             <a class="nav-link" href="/"><span style={{color:'#11262e'}}>Home</span> <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -22,7 +24,7 @@ const Navbar = () => {
                             <a class="nav-link" href="/cv"><span style={{color:'#11262e'}}>CV</span> </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact"><span style={{color:'#11262e'}}>AboutMe</span> </a>
+                            <a class="nav-link"  href="https://contact-muktarul.netlify.app/" target="__blank">About</a>
                         </li>
                         
                         </ul>

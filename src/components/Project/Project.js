@@ -5,6 +5,7 @@ import ProjectMain from '../ProjectMain/ProjectMain';
 
 const Project = () => {
 
+
     const projectsCollection = [{
         id: '1',
         name: 'Doctors Portal',
@@ -140,7 +141,10 @@ const Project = () => {
 
     return (
         <div>
+           
             <h1 className="my-blog">My Recent Projects</h1>
+          
+           
             <br/>
             <br/>
             <div className="row d-flex">
