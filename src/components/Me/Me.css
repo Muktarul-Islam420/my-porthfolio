@@ -1,11 +1,15 @@
 .header-container{
-    background:radial-gradient(#333,#000);
-    margin-top:-30px;
-    height: auto;
+    
+
+   
+}
+
+.header-sub-container{
+    margin-top:30px;
+   
 }
 
 .profileImage-box{
-   
     height: 250px;
     width: 250px;
     background-color: #cc4b2c;

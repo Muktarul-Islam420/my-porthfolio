@@ -15,3 +15,9 @@
     border-bottom: 2px solid #00ffd5 ;
 
 }
+#nav-ContactMe{
+    color:#d44211;
+}
+.navbar{
+    background:radial-gradient(#333,#000);
+}

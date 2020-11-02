@@ -16,6 +16,9 @@ import Blog from './components/Blog/Blog';
 import CV from './components/CV/CV';
 import Navbar from './components/Navbar/Navbar';
 import MyDescription from './components/MyDescription/MyDescription';
+import Me from './components/Me/Me';
+import Home2 from './components/Home2/Home2';
+import NotFound from './components/NotFound/NotFound';
 
 
 function App() {
@@ -27,7 +30,7 @@ function App() {
     {/* <MyDescription></MyDescription> */}
    
      <Navbar></Navbar>
- 
+    
       <Router>
         <Switch>
           <Route path="/home">
@@ -39,14 +42,21 @@ function App() {
           <Route path="/project">
             <Project/>
           </Route>
+          <Route path="/home2">
+            <Home2/>
+          </Route>
+
           <Route path="/blog">
             <Blog/>
           </Route>
           <Route path="/cv">
             <CV/>
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home/>
+            </Route>
+            <Route path="*">
+              <NotFound/>
           </Route>
         </Switch>
     </Router> 

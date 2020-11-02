@@ -12,6 +12,7 @@
 .project-container{
     height: 900px;
     width: 90%;
+    background:radial-gradient(#333,#000);
     margin-left: 40px;
     border-radius: 30px;
     overflow: hidden;
@@ -24,6 +25,7 @@
 .project-container:hover{
     transform:scale(1.1);
     transition:.3s;
+   
 }
 
 .project-img{
@@ -43,6 +45,11 @@
     color:#290F09;
     font-style: italic;
 }
+
+.project-name:hover{
+    color: cyan;
+}
+
 .project-name-sub{
     font-style: italic;
     font-weight:600;
@@ -53,6 +60,9 @@
     font-size: 18px;
     color:#54423D;
    font-style: italic;
+}
+.project-details:hover {
+    color: cyan;
 }
 .project-list-container{
     margin-left: 10%;

@@ -5,7 +5,7 @@ import './Navbar.css'
 const Navbar = () => {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light ">
+            <nav class="navbar navbar-expand-lg navbar-transparent ">
                <div src="/">   
                <img src="https://img.techpowerup.org/201029/profilphoto377.png" className="nav-icon" alt=""/>    
                </div>
@@ -14,19 +14,19 @@ const Navbar = () => {
                         <ul class="navbar-nav">
                         <li class="nav-item active">
                             {/* <Link class="nav-link" href="/"><span style={{color:'#11262e'}}>Home</span> <span class="sr-only">(current)</span> </Link> */}
-                            <a class="nav-link" href="/"><span style={{color:'#11262e'}}>Home</span> <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/" id="resume-btn">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/project"><span style={{color:'#11262e'}}>Project</span> </a>
+                            <a class="nav-link" href="/project" id="resume-btn">Project </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blog"><span style={{color:'#11262e'}}>Blog</span> </a>
+                            <a class="nav-link" href="/blog" id="resume-btn">Blog </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/cv"><span style={{color:'#11262e'}}>CV</span> </a>
+                            <a class="nav-link" href="/cv" id="resume-btn">CV </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="https://contact-muktarul.netlify.app/" target="__blank">ContactMe</a>
+                            <a class="nav-link"  href="https://contact-muktarul.netlify.app/" target="__blank" id="nav-ContactMe">ContactMe</a>
                         </li>
                         
                         </ul>
