@@ -13,7 +13,7 @@ const BlogMain = ({blog}) => {
                     <p className="blog-details">{description}</p>
 
                     <div className="blog-seeMore">
-                    <a href={webLink} className="see-Icon"> <FaExternalLinkAlt size="1rem"  className="mr-4 profile-icon"/></a>
+                    <a href={webLink} target="_blank" className="see-Icon"> <FaExternalLinkAlt size="1rem"  className="mr-4 profile-icon"/></a>
                     </div>
                     <br/>
                 </div>

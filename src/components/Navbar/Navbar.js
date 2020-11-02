@@ -1,13 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Router } from 'react-router-dom';
+
 import './Navbar.css'
 const Navbar = () => {
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-light ">
-               <div src="/">
-               <img src="https://img.techpowerup.org/201029/profilphoto377.png" className="nav-icon" alt=""/>
+               <div src="/">   
+               <img src="https://img.techpowerup.org/201029/profilphoto377.png" className="nav-icon" alt=""/>    
                </div>
+
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                         <li class="nav-item active">
@@ -24,7 +26,7 @@ const Navbar = () => {
                             <a class="nav-link" href="/cv"><span style={{color:'#11262e'}}>CV</span> </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="https://contact-muktarul.netlify.app/" target="__blank">About</a>
+                            <a class="nav-link"  href="https://contact-muktarul.netlify.app/" target="__blank">ContactMe</a>
                         </li>
                         
                         </ul>

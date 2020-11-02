@@ -15,6 +15,7 @@ import Project from './components/Project/Project';
 import Blog from './components/Blog/Blog';
 import CV from './components/CV/CV';
 import Navbar from './components/Navbar/Navbar';
+import MyDescription from './components/MyDescription/MyDescription';
 
 
 function App() {
@@ -23,8 +24,9 @@ function App() {
   return (
  
     <>
+    {/* <MyDescription></MyDescription> */}
    
-    <Navbar></Navbar>
+     <Navbar></Navbar>
  
       <Router>
         <Switch>
@@ -47,7 +49,7 @@ function App() {
             <Home/>
           </Route>
         </Switch>
-    </Router>
+    </Router> 
    
     </>
   );

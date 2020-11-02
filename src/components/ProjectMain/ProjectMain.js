@@ -51,11 +51,11 @@ const ProjectMain = ({project}) => {
 
                 <div className="link-container d-flex">
                    <div className="code-link">
-                   <a href={codeLink}><GoCode size="2rem"  className="mr-4 profile-icon"/></a>
+                   <a href={codeLink} target="_blank"><GoCode size="2rem"  className="mr-4 profile-icon"/></a>
                    </div>
 
                    <div className="website">
-                   <a href={webLink}><ImEarth size="2rem"  className="mr-4 profile-icon"/></a>
+                   <a href={webLink} target="_blank"><ImEarth size="2rem"  className="mr-4 profile-icon"/></a>
                    </div>
                    
                 </div>
