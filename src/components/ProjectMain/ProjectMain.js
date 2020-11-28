@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProjectMain.css'
+import './ProjectMain.scss'
 import { GoCode } from 'react-icons/go';
 import {ImEarth} from 'react-icons/im'
 const ProjectMain = ({project}) => {

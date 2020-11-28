@@ -10,21 +10,29 @@
 
 
 .project-container{
-    height: 900px;
+    height: 500px;
     width: 90%;
-    background:radial-gradient(#333,#000);
+    background:whitesmoke;
     margin-left: 40px;
     border-radius: 30px;
+    
     overflow: hidden;
     margin-bottom: 50px;
     box-shadow: 10px 15px 10px gray;
-  border-left: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
     cursor: pointer;
 }
 
 .project-container:hover{
+    height: 900px;
+    width: 90%;
     transform:scale(1.1);
     transition:.3s;
+
+    
+    & .project-details, & .project-name, .project-list-container, .link-container{
+        visibility: visible;
+    }
    
 }
 
@@ -44,6 +52,7 @@
     font-weight: bold;
     color:#290F09;
     font-style: italic;
+   
 }
 
 .project-name:hover{
@@ -58,14 +67,17 @@
 .project-details{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color:#54423D;
+    color: #662616;
    font-style: italic;
+   visibility: hidden;
+
 }
 .project-details:hover {
     color: cyan;
 }
 .project-list-container{
     margin-left: 10%;
+    visibility: hidden;
 }
 li{
     font-size:16px;
@@ -79,6 +91,7 @@ li:hover{
 
 .link-container{
     margin-left:25%;
+    visibility: hidden;
 }
 
 .code-link{

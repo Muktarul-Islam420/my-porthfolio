@@ -1,10 +1,30 @@
 import React from 'react';
-import { Link, Router } from 'react-router-dom';
+// import { Nav } from 'react-bootstrap';
+// import { Link, Router } from 'react-router-dom';
 
 import './Navbar.css'
 const Navbar = () => {
     return (
+
+    <>
+        {/* <Navbar bg="light" expand="lg">
+            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+                <Nav.Link href="/home" className="nav-link">Home</Nav.Link>
+                <Nav.Link href="#link" className="nav-link">Project</Nav.Link>
+                <Nav.Link href="/home" className="nav-link">Blog</Nav.Link>
+                <Nav.Link href="#link" className="nav-link">CV</Nav.Link>
+                <Nav.Link href="https://contact-muktarul.netlify.app/" target="__blank" className="nav-link">ContactMe</Nav.Link>
+            
+                
+                </Nav>
+            </Navbar.Collapse>
+            </Navbar> */}
+           
         <div>
+            
             <nav class="navbar navbar-expand-lg navbar-transparent ">
                <div src="/">   
                <img src="https://img.techpowerup.org/201029/profilphoto377.png" className="nav-icon" alt=""/>    
@@ -32,7 +52,11 @@ const Navbar = () => {
                         </ul>
                     </div>
             </nav>
+
+            
+
         </div>
+        </>
     );
 };
 

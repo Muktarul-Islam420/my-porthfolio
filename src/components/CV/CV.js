@@ -1,5 +1,5 @@
 import React from 'react';
-import './CV.css'
+import './CV.scss'
 import { FaUserCircle, FaHeadset } from "react-icons/fa";
 import {  AiFillPhone, AiOutlineMail } from "react-icons/ai";
 import {FiShoppingBag} from "react-icons/fi";
@@ -12,7 +12,7 @@ const CV = () => {
         <div className='container'>
             <div className="cv-container">
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className= "col-md-4 cv-col"> 
                         <div className="small-half-width">
                         <img src="https://img.techpowerup.org/201029/profilphoto.png" className="cv-img" alt=""/> 
                         </div>
@@ -26,7 +26,7 @@ const CV = () => {
                 </div>
 
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 cv-col">
                     <div className="information-container">
                             <div className="information-data">
                                 <div className="cv-info">
@@ -44,7 +44,7 @@ const CV = () => {
                                 </div>
                                 <div className="data-name d-flex">
                                     <AiOutlineMail size="2rem"  className="mr-4 profile-icon"/>
-                                    <p><strong>muktarul@yahoo.com</strong></p>
+                                    <p><strong>www.muktarul420@gmail.com</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +153,17 @@ const CV = () => {
 
 
                 <div className="row">
-                    <div className="col-md-4"></div>
+                    <div className="col-md-4 cv-col">
+                        <div className="cv-info">
+                            <h5>Online Courses</h5>
+                        </div>
+                        <br/>
+
+                        <ul>
+                            <li>Bangla Web Development <br/> <small className="text-success">By Programming Hero</small></li>
+                        </ul>
+                    </div>
+                    
                     <div className="col-md-8">
                         <div className="cv-skill mt-5 mb-3">
                         <h3 className="subtitle-text">Experience & Projects</h3>
@@ -247,7 +257,7 @@ const CV = () => {
 
 
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 cv-col">
                         <div className="cv-info">
                             <h5>Language</h5>
                         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './BlogMain.css'
+import './BlogMain.scss'
 import {FaExternalLinkAlt} from 'react-icons/fa'
 const BlogMain = ({blog}) => {
 
