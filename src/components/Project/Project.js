@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import ProjectMain from '../ProjectMain/ProjectMain';
-
+import Aos from 'aos';
+import "aos/dist/aos.css";
 // technology: 'HTML, CSS, Javascript, React JS, React Modal, Bootstrap, React-router-dom, FontAwesome, Firebase, Heroku, Google Font,Node JS, Netlify',
 
 const Project = () => {
-
+    useEffect(() =>{
+        Aos.init({duration: 3000});
+      },[])
+    
 
     const projectsCollection = [{
         id: '1',
@@ -142,7 +147,9 @@ const Project = () => {
     return (
         <div>
            
-            <h1 className="my-blog">My Recent Projects</h1>
+            <Link to="/project">
+            <h1 className="my-blog" data-aos="fade-right">My Recent Projects</h1>
+            </Link>
           
            
             <br/>

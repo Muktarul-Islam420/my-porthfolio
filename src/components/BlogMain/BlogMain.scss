@@ -6,7 +6,7 @@ body{
     font-size:36px;
     font-weight:800;
     color: #cc4b2c;
-   
+    margin-top: 100px;
     text-align: center;
     font-style: italic;
     text-shadow: 0 2px 2px rgb(71, 255, 230);
@@ -28,11 +28,12 @@ body{
     cursor: pointer;
     overflow: hidden;
     box-shadow:10px 15px 10px lightgrey;
-
+    
 }
 .blog-container:hover{
     transform:scale(1.1);
-    transition:.3s;
+    transform: translate(10px);
+    transition:all 1s linear;
     box-shadow:10px 15px 10px #4cf9ff;
 }
 .blog-name{

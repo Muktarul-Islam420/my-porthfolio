@@ -1,35 +1,43 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css'
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 import { SiFacebook, SiGithub, SiLinkedin, SiDribbble } from "react-icons/si";
 import { Link } from 'react-router-dom';
 import MyDescription from '../MyDescription/MyDescription';
+import Project from '../Project/Project';
+import Blog from '../Blog/Blog';
+import CV from '../CV/CV';
 
 const Home = () => {
-  
+  useEffect(() =>{
+    Aos.init({duration: 3000});
+  },[])
 
     return (
+        <>
         <div className="header-container">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <div className="header-sub-container">
                 <div className="profileImage-box">
-                    <img src="https://img.techpowerup.org/201029/profilphoto.png" className="profile-image" alt=""/>
+                    <img src="https://img.techpowerup.org/201029/profilphoto.png" className="img-responsive profile-image" alt=""/>
                 </div>
                 <div className="profile-description-box">
 
-                    <div class="my-name-title">
-                    <h1 >Muktarul Islam</h1>
+                    <div className="my-name-title mt-4 ml-center">
+                    <h1>Muktarul Islam</h1>
                     </div>
-                            
-                    {/* <p style={{marginLeft:'22px'}}><strong>Full stack Web Developer</strong></p> */}
-                    <MyDescription />
+                        
+                    <MyDescription/>
                     <p className="my-info">Hi, I'm full stack web developer, passionate about creating and developing web interfaces.I have many years of experience in this area of work,with multiple quality projects</p>               
                     
-                    {/* <div class="me">Escape</div> 
-                    <div class="me"> 
-                    <span>into amazing experiences</span>
-                    </div> */}
                     
-                    <div className="icon-box ml-4" id="icon-box">
+                    <div className="icon-box ml-4" id="icon-box"  data-aos="fade-right">
                         <a href="https://facebook.com/md.muktarulkhanakash" target="_blank">
                         <SiFacebook href="https://facebook.com/md.muktarulkhanakash"  size="2em" className="mr-3 profile-icon"> </SiFacebook>
                         </a>
@@ -50,14 +58,24 @@ const Home = () => {
                 </div>
            </div>
            
-           <div className="resume-btn"></div>
-           <p className="resume-btn-text">
+           <div className="resume-btn" data-aos="fade-left"></div>
+           <p className="resume-btn-text" data-aos="fade-left">
            <a href="https://drive.google.com/file/d/1DT1fDqtNxLNr6ZZnVaXL6eH0kI7vvlAW/view?usp=sharing" target="_blank" id="resume-btn">
                <strong>Download Resume</strong>
                </a>
                </p>
-           
+               <br/>
         </div>
+            <br/>
+            <br/>
+        <Project></Project>
+        <br/>
+        <br/>
+        <Blog></Blog>
+        <br/>
+        <br/>
+        <CV data-aos="fade-right"></CV>
+        </>
     );
 };
 

@@ -5,19 +5,41 @@
     margin-right:400px;
     cursor: pointer;
 }
+
 .nav-link{
-    margin-right:60px;
+   
     color:#d44211;
     font-weight:400;
     
 }
-.nav-item:hover{
-    border-bottom: 2px solid #00ffd5 ;
 
+
+#nav-link {
+    color: #3742fa;
+    margin-right:60px;
+    font-weight: 800;
+    text-transform: uppercase;
 }
+#nav-link:hover {
+    border-bottom: 2px solid #00ffd5 ;
+    width:auto;
+}
+
 #nav-ContactMe{
     color:#d44211;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
 }
-.navbar{
+#nav-ContactMe:hover{
+    border-bottom: 2px solid deeppink ;
+    width:auto;
+}
+
+.NavBar{
+    background:transparent;
+}
+.NavBar:scroll{
     background:radial-gradient(#333,#000);
 }

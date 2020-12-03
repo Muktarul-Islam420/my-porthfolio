@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import BlogMain from '../BlogMain/BlogMain';
-
+import Aos from 'aos';
+import "aos/dist/aos.css";
 const Blog = () => {
+
+    useEffect(() =>{
+        Aos.init({duration: 1000});
+      },[])
+
+
     const MyBlogs = [{
         id: '1',
         name: 'HTML',
@@ -43,7 +51,9 @@ const Blog = () => {
 ]
     return (
         <div>
-            <h1 className="my-blog">My Blog</h1>
+            <Link to="/blog">
+            <h1 className="my-blog" data-aos="fade-left">My Blog</h1>
+            </Link>
             <div className="row d-flex">
                 {
                     MyBlogs.map(blog =><BlogMain blog={blog} key={blog.id}></BlogMain>)

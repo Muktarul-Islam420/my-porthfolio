@@ -14,11 +14,11 @@ import About from './components/About/About';
 import Project from './components/Project/Project';
 import Blog from './components/Blog/Blog';
 import CV from './components/CV/CV';
-import Navbar from './components/Navbar/Navbar';
 import MyDescription from './components/MyDescription/MyDescription';
 import Me from './components/Me/Me';
 import Home2 from './components/Home2/Home2';
 import NotFound from './components/NotFound/NotFound';
+import NavBar from './components/NavBar/NavBar';
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
     <>
     {/* <MyDescription></MyDescription> */}
    
-     <Navbar></Navbar>
+     <NavBar></NavBar>
     
       <Router>
         <Switch>

@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ProjectMain.scss'
 import { GoCode } from 'react-icons/go';
-import {ImEarth} from 'react-icons/im'
+import {ImEarth} from 'react-icons/im';
+import Aos from 'aos';
+import "aos/dist/aos.css"
 const ProjectMain = ({project}) => {
-    console.log(project);
+    useEffect(() =>{
+        Aos.init({duration: 4000});
+      },[])
+
+  
     const {name,image,details,feature,technology,screenshots,webLink, codeLink} = project;
-    console.log(name);
     const {T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12} = technology;
     const {feature1,feature2,feature3,feature4,feature5,feature6,feature7,feature8} = feature;
     return (
         <div className="col-md-6">
-            <div className="project-container">
+            <div className="project-container" data-aos="fade-up">
                 <img src={image} className="project-img" alt=""/>
                 <div className="project-description">
                     <h4 className="project-name "><span className="subtitle-text">Project Name:</span> <span className="project-name-sub">{name}</span></h4>
@@ -57,8 +62,8 @@ const ProjectMain = ({project}) => {
                    <div className="website">
                    <a href={webLink} target="_blank"><ImEarth size="2rem"  className="mr-4 profile-icon"/></a>
                    </div>
-                   
                 </div>
+                <br/>
             </div>
         </div>
     );
