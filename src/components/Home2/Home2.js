@@ -1,11 +1,20 @@
 import React from 'react';
+import Blog from '../Blog/Blog';
+import CV from '../CV/CV';
 import Me from '../Me/Me';
+import Project from '../Project/Project';
 import './Home2.css'
 const Home2 = () => {
     return (
+        <>
         <section>
         <div>
-
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
        <Me></Me>
 
         </div>
@@ -44,6 +53,8 @@ const Home2 = () => {
             
     </div>
 </section>
+
+        </>
     );
 };
 

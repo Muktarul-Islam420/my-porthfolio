@@ -5,12 +5,15 @@ import { SiFacebook, SiGithub, SiLinkedin, SiDribbble } from "react-icons/si";
 import { Link } from 'react-router-dom';
 import MyDescription from '../MyDescription/MyDescription';
 import Home2 from '../Home2/Home2';
+import Project from '../Project/Project';
+import Blog from '../Blog/Blog';
+import CV from '../CV/CV';
 
 const Me = () => {
   
 
     return (
-        
+        <>
         <div className="header-container">
             <div className="header-sub-container">
                 <div className="profileImage-box">
@@ -58,8 +61,18 @@ const Me = () => {
                <strong>Download Resume</strong>
                </a>
                </p>
-           
+               <br/>
+        <br/>
+    <Project></Project>
+    <br/>
+    <br/>
+    <Blog></Blog>
+    <br/>
+    <br/>
+    <CV></CV>
         </div>
+     
+    </>
         
         
     );

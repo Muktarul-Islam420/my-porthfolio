@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Home.css'
+import './Home.scss'
 import Aos from 'aos';
 import "aos/dist/aos.css"
 
@@ -18,6 +18,7 @@ const Home = () => {
     return (
         <>
         <div className="header-container">
+            <br/>
             <br/>
             <br/>
             <br/>
@@ -74,7 +75,7 @@ const Home = () => {
         <Blog></Blog>
         <br/>
         <br/>
-        <CV data-aos="fade-right"></CV>
+        <CV></CV>
         </>
     );
 };

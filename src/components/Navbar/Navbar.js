@@ -5,7 +5,7 @@ const NavBar2 = () => {
     return (
         <div>
            
-           <Navbar fixed="top"  expand="lg" className="NavBar">
+           <Navbar fixed="top"  expand="lg" className="NavBar bg-light">
             <Navbar.Brand href="#home"><img src="https://img.techpowerup.org/201029/profilphoto377.png"  className="nav-icon" alt=""/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
