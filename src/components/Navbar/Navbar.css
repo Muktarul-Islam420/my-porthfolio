@@ -38,7 +38,7 @@
 }
 
 .NavBar{
-    background:transparent;
+    background:rgb(238, 232, 232);
 }
 .NavBar:scroll{
     background:radial-gradient(#333,#000);
