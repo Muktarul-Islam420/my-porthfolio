@@ -4,6 +4,7 @@ import { GoCode } from 'react-icons/go';
 import {ImEarth} from 'react-icons/im';
 import Aos from 'aos';
 import "aos/dist/aos.css"
+import myBg from '../../videos/bgVideo.mp4'
 const ProjectMain = ({project}) => {
     useEffect(() =>{
         Aos.init({duration: 4000});
@@ -14,6 +15,26 @@ const ProjectMain = ({project}) => {
     const {T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12} = technology;
     const {feature1,feature2,feature3,feature4,feature5,feature6,feature7,feature8} = feature;
     return (
+        <>
+            {/* <video
+                autoPlay
+                loop
+                muted
+                style={{
+                position: 'absolute',
+                width: '100%',
+                left: '50%',
+                top: '50%',
+                transform:"translate(-50%, -50%)",
+                height: '100%',
+                objectFit:"cover",
+               
+                zIndex:"-1"
+                }}>
+
+                <source src={myBg} type="video/mp4"/>
+            </video> */}
+
         <div className="col-md-6">
             <div className="project-container" data-aos="fade-up">
                 <img src={image} className="project-img" alt=""/>
@@ -56,16 +77,19 @@ const ProjectMain = ({project}) => {
 
                 <div className="link-container d-flex">
                    <div className="code-link">
+                       <h6 className="project-details">Code</h6>
                    <a href={codeLink} target="_blank"><GoCode size="2rem"  className="mr-4 profile-icon"/></a>
                    </div>
 
                    <div className="website">
+                   <h6 className="project-details">Live Site</h6>
                    <a href={webLink} target="_blank"><ImEarth size="2rem"  className="mr-4 profile-icon"/></a>
                    </div>
                 </div>
                 <br/>
             </div>
         </div>
+        </>
     );
 };
 

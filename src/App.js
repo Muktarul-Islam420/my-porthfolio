@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -19,7 +19,7 @@ import Me from './components/Me/Me';
 import Home2 from './components/Home2/Home2';
 import NotFound from './components/NotFound/NotFound';
 import NavBar from './components/NavBar/NavBar';
-
+import myBg from './videos/bgVideo.mp4'
 
 function App() {
 
@@ -27,8 +27,24 @@ function App() {
   return (
  
     <>
-    {/* <MyDescription></MyDescription> */}
-   
+
+
+    <video
+    autoPlay
+    loop
+    muted
+     style={{
+       position: 'fixed',
+       width: '100%',
+      
+       height: '805px',
+       objectFit:"cover",
+       zIndex:"-1"
+     }}>
+
+       <source src={myBg} type="video/mp4"/>
+    </video>
+
      <NavBar></NavBar>
     
       <Router>
