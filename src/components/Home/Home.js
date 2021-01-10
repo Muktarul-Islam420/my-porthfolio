@@ -63,7 +63,7 @@ const Home = () => {
            
            <div className="resume-btn" data-aos="fade-left"></div>
            <p className="resume-btn-text" data-aos="fade-left">
-           <a href="https://drive.google.com/file/d/11GdUbf0ajCuICHKdnYa_uYhSlmiqPsX9/view?usp=sharing" target="_blank" id="resume-btn">
+           <a href="https://drive.google.com/file/d/1dnbgK5hXlR1qhe2Q7vcC24wx9KM4txgr/view?usp=sharing" target="_blank" id="resume-btn">
                <strong>Download Resume</strong>
                </a>
                </p>
